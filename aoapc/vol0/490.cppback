@@ -1,0 +1,63 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+  string inputStrings[100];
+  char outputArray[101][101];
+  int charCountPerLine[100];
+  int lineCount = 0;
+
+  while (getline(cin, inputStrings[lineCount])) {
+    // cout << lineCount << ": " <<  inputStr[lineCount] << endl;
+    lineCount++;
+  }
+  
+  // for (int i = 0; i < lineCount; i++) {
+  //   cout << inputStrings[i] << endl;
+  //   cout << charCountPerLine[i] << endl;
+  //   cout << endl;
+  // }
+
+  // process input
+  for (int i = 0; i < lineCount; i++) {
+    /*    for (int j = 0; j < inputStrings[i].size(); j++) {
+      if (inputStrings[i][j] == '\t'){
+	inputStrings[i].erase(inputStrings[i].begin()+j);
+      }
+      }*/
+    inputStrings[i].erase(remove(inputStrings[i].begin(), inputStrings[i].end(), '\t'),
+			  inputStrings[i].end());
+    //    cout << inputStrings[i] << endl;
+    charCountPerLine[i] = inputStrings[i].size();
+  }
+
+  int maxiCol = 0;
+  for (int i = 0; i < lineCount; i++) {
+    if (charCountPerLine[i] >= maxiCol)
+      maxiCol = charCountPerLine[i];
+  }
+
+  //  cout << maxiCol << endl;
+  for (int i = 0; i < maxiCol; i++) {
+    int endPos = 0;
+    for (int j = 0; j < lineCount; j++) {
+      charCountPerLine[lineCount-j-1]--;
+      if (charCountPerLine[lineCount-j-1] >= 0)
+	endPos = j+1;
+    }
+    for (int j = 0; j < endPos; j++) {
+      outputArray[i][j] = charCountPerLine[lineCount-j-1] >= 0 ? inputStrings[lineCount-j-1][i]:' ';
+    }
+    outputArray[i][endPos] = 0;
+  }
+
+  // output
+  for (int i = 0; i < maxiCol; i++) {
+    cout << outputArray[i] << endl;
+  }
+
+  return 0;
+}

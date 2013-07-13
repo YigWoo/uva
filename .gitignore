@@ -1,0 +1,8 @@
+*.out
+*.exe
+
+# emacs markdown preview creates html files
+*.html
+
+# some anoying log files created under linux
+*.log
