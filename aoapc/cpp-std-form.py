@@ -5,14 +5,10 @@ def createCppFile(filepath):
     stdform = '''#include <iostream>
 #include <string>
 #include <vector>
-#include <time>
 using namespace std;
 
 int main() {
-  t = clock();
-  t = clock() - t;
-  cout << "time:clocks  " << (double)t/CLOCKS_PER_SEC << ":" << (int)clock() << endl;
-  return 0;
+    return 0;
 }
 '''
     file = open(filepath, 'w')
