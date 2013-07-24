@@ -12,13 +12,7 @@ int frequency_of_primes (int n) {
 
 int main ()
 {
-  clock_t t;
-  int f;
-  t = clock();
-  printf ("Calculating...\n");
-  f = frequency_of_primes (99999);
-  printf ("The number of primes lower than 100,000 is: %d\n",f);
-  t = clock() - t;
-  printf ("It took me %d clicks (%f seconds).\n",(int)t,((float)t)/CLOCKS_PER_SEC);
-  return 0;
+    double d;
+    d = NULL;
+    return 0;
 }

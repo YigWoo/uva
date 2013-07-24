@@ -6,3 +6,5 @@
 
 # some anoying log files created under linux
 *.log
+
+*test

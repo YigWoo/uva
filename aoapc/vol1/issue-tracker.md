@@ -8,3 +8,14 @@
 		
 ## 10010 Where's Waldorf
 1. The use of trie.
+
+## 537 artificial intelligence?
+1. Remind, after fetch the integer at the first line, there're one newline left behind!!
+2. cout format:
+    - std:scientifc.
+    - std:fixed
+    - iomanip, setprecision()
+3. **Don't mess up a simple question with a complicated approach, and DO REMEMBER: find an elegant and simple approach before you starting coding the problem!**
+
+## 409 Excuses, Excuses!
+
