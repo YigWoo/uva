@@ -18,4 +18,10 @@
 3. **Don't mess up a simple question with a complicated approach, and DO REMEMBER: find an elegant and simple approach before you starting coding the problem!**
 
 ## 409 Excuses, Excuses!
+1. There's a function `nextword` which take a pure alphabetic word from `istream` and convert it to lowercase then return the word. You might need it some time.
+
+## 10878 Decode the tape
+I don't know what's wrong
+
+## 10815 Andy's First Dictionary
 

@@ -7,10 +7,10 @@ Input
 ----------
 Input to your program will consist of multiple sets of data.
 
-- Line 1 of each set will contain exactly two integers. The first number (  ) defines the number of keywords to be used in the search. The second number (  ) defines the number of excuses in the set to be searched.
+- Line 1 of each set will contain exactly two integers. The first number (1<=K<=20) defines the number of keywords to be used in the search. The second number (1<=E<=20) defines the number of excuses in the set to be searched.
 - Lines 2 through K+1 each contain exactly one keyword.
 - Lines K+2 through K+1+E each contain exactly one excuse.
-- All keywords in the keyword list will contain only contiguous lower case alphabetic characters of length L (  ) and will occupy columns 1 through L in the input line.
+- All keywords in the keyword list will contain only contiguous lower case alphabetic characters of length L (1<=L<=20) and will occupy columns 1 through L in the input line.
 - All excuses can contain any upper or lower case alphanumeric character, a space, or any of the following punctuation marks [SPMamp".,!?&] not including the square brackets and will not exceed 70 characters in length.
 - Excuses will contain at least 1 non-space character.
 

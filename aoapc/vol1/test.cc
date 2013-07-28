@@ -2,6 +2,8 @@
 #include <stdio.h>      /* printf */
 #include <time.h>       /* clock_t, clock, CLOCKS_PER_SEC */
 #include <math.h>       /* sqrt */
+#include <iostream>
+using namespace std;
 
 int frequency_of_primes (int n) {
   int i,j;
@@ -12,7 +14,6 @@ int frequency_of_primes (int n) {
 
 int main ()
 {
-    double d;
-    d = NULL;
-    return 0;
+    int i = 2;
+
 }
