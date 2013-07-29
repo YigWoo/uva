@@ -21,7 +21,11 @@
 1. There's a function `nextword` which take a pure alphabetic word from `istream` and convert it to lowercase then return the word. You might need it some time.
 
 ## 10878 Decode the tape
-I don't know what's wrong
+I don't know what's wrong, maybe input or output, but i got an AC... Holy Cow!
 
 ## 10815 Andy's First Dictionary
+No problem, using Trie data structure
+
+## 644 Immediate Decodability
+The input process is kind of mysterious. See the difference between 644.cc and 644-wa.cc.
 
