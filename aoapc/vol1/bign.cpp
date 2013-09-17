@@ -1,12 +1,9 @@
-#include <iostream>
-#include <string>
-#include <vector>
 #include<cstdio>
 #include<cstring>
-
+#include<iostream>
 using namespace std;
 
-const int maxn = 200;
+const int maxn = 500;
 struct bign{
   int len, s[maxn];
 
@@ -91,6 +88,7 @@ struct bign{
 
   bool operator < (const bign& b) const{
     if(len != b.len) return len < b.len;
+
     for(int i = len-1; i >= 0; i--)
       if(s[i] != b.s[i]) return s[i] < b.s[i];
     return false;
@@ -124,13 +122,4 @@ istream& operator >> (istream &in, bign& x) {
 ostream& operator << (ostream &out, const bign& x) {
   out << x.str();
   return out;
-}
-
-int main() {
-    bign bignTmp, bignSum(0), bignZero(0);
-    while ((cin >> bignTmp) && (!(bignTmp == bignZero))) {
-        bignSum += bignTmp;
-    }
-    cout << bignSum << endl;
-    return 0;
 }

@@ -1,12 +1,9 @@
-#include <iostream>
-#include <string>
-#include <vector>
 #include<cstdio>
 #include<cstring>
-
+#include<iostream>
 using namespace std;
 
-const int maxn = 200;
+const int maxn = 1000;
 struct bign{
   int len, s[maxn];
 
@@ -127,10 +124,11 @@ ostream& operator << (ostream &out, const bign& x) {
 }
 
 int main() {
-    bign bignTmp, bignSum(0), bignZero(0);
-    while ((cin >> bignTmp) && (!(bignTmp == bignZero))) {
-        bignSum += bignTmp;
+    bign first, second;
+    while (cin >> first >> second) {
+        bign product;
+        product = first * second;
+        cout << product << endl;
     }
-    cout << bignSum << endl;
     return 0;
 }

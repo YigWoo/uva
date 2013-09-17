@@ -1,5 +1,6 @@
 ## 10055 Hashmat the brave warrior
 1. In c++, int is a 4-byte data, which is 32 bits, and the range for signed int is (-32767, 32767), and the range for unsigned int (0, 65535), because the input numer is ensured to be no greater than 2^32, using int will not suffice the requirement. The minimum numerical type used should be long long, which has a range of (-(2^63 - 1), +(2^63 + 1)). refer to [size-of-int-long-etc](http://stackoverflow.com/questions/589575/size-of-int-long-etc) for more infomation.
+
 2. "Each line denote the number of soldiers in Hashmat's army and his opponent's army __or vice versa__. Reading the line carefully, it really counts here.
 
 ## 10071 Back to high school physics
